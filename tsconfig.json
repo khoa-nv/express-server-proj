@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@constants": ["constants"],
+      "@constants/*": ["constants/*"],
+      "@interfaces": ["interfaces"],
+      "@interfaces/*": ["interfaces/*"],
+      "@controllers": ["controllers"],
+      "@controllers/*": ["controllers/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"],
+      "@validates": ["validates"],
+      "@validates/*": ["validates/*"],
+      "@outputs": ["outputs"],
+      "@outputs/*": ["outputs/*"],
+      "@services": ["services"],
+      "@services/*": ["services/*"],
+      "@models": ["models"],
+      "@models/*": ["models/*"],
+      "@dao": ["dao"],
+      "@dao/*": ["dao/*"],
+      "@routes": ["routes"],
+      "@routes/*": ["routes/*"],
+      "@middlewares": ["middlewares"],
+      "@middlewares/*": ["middlewares/*"],
+      "@validators": ["validators"],
+      "@validators/*": ["validators/*"],
+      "@config": ["config"]
+    },
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}
