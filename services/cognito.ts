@@ -62,6 +62,7 @@ class Cognito {
     try {
       return await this.cognitoIdentity.initiateAuth(params).promise();
     } catch (error) {
+      console.log(error);
       throw this.handleError(error);
     }
   };

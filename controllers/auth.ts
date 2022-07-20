@@ -62,9 +62,12 @@ class AuthController {
       this.validateData(req);
       const { password, newPassword } = req.body;
       const { token } = req.user;
-      return await req
+      await req
         .service(COGNITO)
         .changeUserPassword({ token, password, newPassword });
+      res.createSuccessResponse({
+        message: "Your password has been updated",
+      });
     } catch (err) {
       next(err);
     }
